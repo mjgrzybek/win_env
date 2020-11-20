@@ -2,7 +2,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 choco install -y notepadplusplus doublecmd 7zip cmder
-choco install microsoft-windows-terminal --pre 
+choco install microsoft-windows-terminal --pre -y
 
 # use notepad++ to open any textfile
 cmd /c "ftype ""No Extension""=""notepad++.exe"" ""%1"""
